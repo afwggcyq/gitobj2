@@ -1,0 +1,21 @@
+{
+  "name": "gitobj",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "gitobj"
+  ],
+  "author": "zhangxiaoyan",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt-contrib-csslint": "^2.0.0",
+    "grunt-contrib-jshint": "^1.0.0"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "gitobj",
+  "description": "none",
+  "main": "index.js",
+  "authors": [
+    "zhangxiaoyan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "gitobj"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor",
+    "test",
+    "tests"
+  ]
+}
