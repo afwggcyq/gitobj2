@@ -1,0 +1,65 @@
+/**
+ * Created by MSI on 2016/10/28.
+ */
+$(document).ready(function(){
+    $("input#username,input#pass").focus(function(){
+        $(this).css("background-color","green");
+    });
+    //点登录时的操作
+    $("#focus-submit").click(function(){
+        if ($("input#username").val() == ""){
+            alert("请输入账号");
+            $("input#username").focus();
+        }
+    });
+});
+$("input#ctrl_img").bind("click",function(){
+    $("p#img").slideToggle();
+});
+$(function(){
+    $("#img-click").click(function(){
+        var imghtml = '<img src="../images/2143425藏戏合集.jpg">';
+        $(this).html(imghtml);
+    });
+});
+/*
+$(function(){
+    $("#img-toggle").toggle(
+        function(){
+            $("#img-toggle").attr("src","../images/8.jpg");
+        },
+        function(){
+            $("#img-toggle").attr("src","../images/27.jpg");
+        },
+        function(){
+            $("#img-toggle").attr("src","../images/2143425藏戏合集.jpg");
+        }
+    );
+});*/
+$(function(){
+    $("#mouse-img-one").mouseover(function(){
+       $("#mouse-img-one").attr("src","../images/3274266晒佛1.jpg")
+    });
+    $("#mouse-img-one").mouseout(function(){
+        $("#mouse-img-one").attr("src","../images/2143425藏戏合集.jpg")
+    });
+});
+$(function(){
+    $("#hover").hover(
+        function(){
+            $("#hover").attr("src","./images/2143425藏戏合集.jpg");
+        },
+        function(){
+            $("#hover").attr("src","./images/3274266晒佛1.jpg");
+        }
+    );
+});
+function getToTopLength(){
+    if($(window).scroll()){
+        $(window).scroll(
+            function(){
+                alert($(this).scrollTop());
+            }
+        );
+    }
+}
